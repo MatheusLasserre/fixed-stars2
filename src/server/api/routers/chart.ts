@@ -41,7 +41,7 @@ export const chartRouter = createTRPCRouter({
         inputType: z.enum(["decimal", "dms"]),
         houseSystem: z.enum(["P", "R"])
     })).mutation( ({ input }) => {
-
+// Trigger Vercel Branch
         try {
             const day = input.date.getDate();
             const month = input.date.getMonth() + 1;
