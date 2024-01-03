@@ -42,7 +42,7 @@ export const chartRouter = createTRPCRouter({
         inputType: z.enum(["decimal", "dms"]),
         houseSystem: z.enum(["P", "R"])
     })).mutation( ({ input }) => {
-// Trigger Vercel Branch
+// Trigger Vercel Branch 2
         try {
             // check if ephemeris folder exists and logs it
             console.log('Ephemeris folder exists: ', fs.existsSync(`${process.cwd()}/ephe`));
